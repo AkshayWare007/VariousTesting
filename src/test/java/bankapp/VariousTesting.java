@@ -37,7 +37,7 @@ public class VariousTesting {
         when(bill.calculateBill(item1, item2, item3, item4)).thenReturn(100.0);
 
         /** Testing */
-        double actual = bill.calculateBill(item1, item2, item3, item4);
+        double actual = billService.calculateBill(item1, item2, item3, item4);
         double expected = 100.0;
         assertEquals(actual, expected, 0);
     }
